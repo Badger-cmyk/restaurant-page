@@ -7,5 +7,52 @@ body {
         url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;                 
+    background-position: center;   
+
+    display: grid;
+    grid-template-rows: 1fr 8fr;              
+}
+
+#content {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20rem;
+}
+
+header h1 {
+    color: #976c00;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: #976c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #8a6300;
 }

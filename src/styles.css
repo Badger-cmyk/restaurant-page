@@ -13,8 +13,12 @@ body {
     background-size: cover;
     background-position: center;   
 
-    display: grid;
-    grid-template-rows: 1fr 8fr;              
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex: 1;
 }
 
 header {

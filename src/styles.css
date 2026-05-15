@@ -251,3 +251,70 @@ hr {
     width: 300px;
     border-radius: 1rem;
 }
+
+/* menu */
+.menu-container {
+    background-color: #3b2f2f;
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 5rem 7rem 5rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.menu-item-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.main-dishes,
+.sides,
+.beverages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main-dishes h2,
+.sides h2,
+.beverages h2 {
+    grid-column: 1 / -1;
+}
+
+.dish-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 300px;
+    border-radius: 1rem;
+  
+    background-color: #2c1f1f;
+}
+
+.dish-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transform: translateY(-4px);
+}
+
+.dish-card div {
+    flex: 1;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+}
+
+

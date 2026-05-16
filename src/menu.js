@@ -48,7 +48,7 @@ export function menu(){
             `Spaghetti in a rich tomato and beef mince sauce,
             topped with parmesan.`, `$34.99`),
         createDishCard(pizzaImg, `Pizza`, `Chicken Pizza`,
-            `Spicy barbecue sauce, diced chicken, peppers and onion,
+            `Barbecue sauce, diced chicken, peppers and onion,
             all covered with cheese and baked to goodness.`, `$20.99`),
         createDishCard(steakImg, `Steak`, `Sirloin Steak`,
             `Served with steamed rice and stir-fried vegetables with rich

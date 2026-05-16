@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Yellow Ginger';
+    src: url('fonts/YellowGinger.woff2') format('woff2'),
+        url('fonts/YellowGinger.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherly Kitchen';
+    src: url('fonts/SherlyKitchen-Regular.woff2') format('woff2'),
+        url('fonts/SherlyKitchen-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Royale Smith Demo';
+    src: url('fonts/RoyaleSmithDemoRegular.woff2') format('woff2'),
+        url('fonts/RoyaleSmithDemoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --text-color: #976c00;
 }
@@ -21,6 +48,10 @@ body {
     flex: 1;
 }
 
+button {
+    font-family: 'Sherly Kitchen';
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -29,7 +60,8 @@ header {
 }
 
 header h1 {
-    color: var(--text-color)
+    color: var(--text-color);
+    font-family: 'Royale Smith Demo';
 }
 
 .logo-container {
@@ -85,6 +117,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 3rem;
+    font-family: 'Sherly Kitchen';
 }
 
 footer div {
@@ -130,6 +163,7 @@ footer p {
     justify-content: center;
     flex: 1;
     padding-bottom: 3rem;
+    font-family: 'Yellow Ginger';
 }
 
 .welcome p {
@@ -164,6 +198,7 @@ footer p {
     align-items: center;
     gap: 4rem;
     padding: 5rem 4rem;
+    font-family: 'Sherly Kitchen';
 }
 
 .story h3,
@@ -178,7 +213,8 @@ footer p {
 
 .story p {
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 2.5;
+    font-weight: bold;
 }
 
 .story button {
@@ -231,6 +267,16 @@ hr {
     text-align: center;
     padding: 2rem 5rem 7rem 5rem;
     border-radius: 1rem;
+
+    font-family: 'Sherly Kitchen';
+}
+
+.about-welcome {
+    font-size: 1.2rem;
+}
+
+.about-description p {
+    font-size: 1.2rem;
 }
 
 .about-text {
@@ -266,6 +312,7 @@ hr {
     padding: 2rem 5rem 7rem 5rem;
     border-radius: 1rem;
     color: white;
+    font-family: 'Yellow Ginger';
 }
 
 .menu-item-image {
@@ -291,10 +338,12 @@ hr {
 
 .dish-card {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    gap: 1rem;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 300px;
+    min-height: 220px;
     border-radius: 1rem;
   
     background-color: #2c1f1f;
@@ -312,9 +361,22 @@ hr {
 .description {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
+    flex: 1;
+}
+
+.description h3 {
+    margin: 0 0 0 0.5rem 0;
+}
+
+.description p:first-of-type {
+    flex: 1;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.description p:last-of-type {
+    margin-top: 1rem;
+    font-weight: bold;
 }
 
 

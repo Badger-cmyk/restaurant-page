@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Yellow Ginger';
+    src: url('YellowGinger.woff2') format('woff2'),
+        url('YellowGinger.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherly Kitchen';
+    src: url('SherlyKitchen-Regular.woff2') format('woff2'),
+        url('SherlyKitchen-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Royale Smith Demo';
+    src: url('RoyaleSmithDemoRegular.woff2') format('woff2'),
+        url('RoyaleSmithDemoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

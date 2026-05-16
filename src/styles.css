@@ -338,7 +338,7 @@ hr {
 
 .dish-card {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     gap: 1rem;
     justify-content: center;
     padding: 1.5rem;

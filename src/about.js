@@ -16,7 +16,7 @@ export function about(){
     const aboutWelcomePara = document.createElement('p')
     aboutWelcomePara.textContent = `Welcome to The Golden Fork, a place where comfort meets modern flavour.
                 We founded our restaurant in 2019 out of a deep love for real food and to bring
-                people together using great meals.From family dinners to quick lunches
+                people together using great meals. From family dinners to quick lunches
                 with friends, we wanted to create a warm and welcoming space where everyone
                 feels at home.`
 

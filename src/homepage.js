@@ -1,4 +1,6 @@
 import foodImg from "./images/food.jpg"
+import { menu } from "./menu.js"
+import { about } from "./about.js"
 
 export function homePage(){
     const contentContainer = document.querySelector('#content')
@@ -19,6 +21,11 @@ export function homePage(){
 
     const mealBtn = document.createElement('button')
     mealBtn.textContent = `Find a Meal`
+    mealBtn.classList.add('meal-btn')
+    mealBtn.addEventListener('click', e => {
+        contentContainer.replaceChildren()
+        menu()
+    })
 
     welcome.append(welcomeHeading,lineDivision,welcomePara,mealBtn)
 
@@ -41,6 +48,10 @@ export function homePage(){
 
     const storyButton = document.createElement('button')
     storyButton.textContent = `Read More`
+    storyButton.addEventListener('click', (e) => {
+        contentContainer.replaceChildren()
+        about()
+    })
 
     storyText.append(storyHeading,storyPara,storyButton)
 
